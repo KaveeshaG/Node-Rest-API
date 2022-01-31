@@ -23,7 +23,7 @@ app.get("/api/users", (req, res, next) => {
           return;
         }
         res.json({
-            "message":"success",
+            "message":"වැඩේ හරි!",
             "data":rows
         })
       });
@@ -39,7 +39,7 @@ app.get("/api/user/:id", (req, res, next) => {
           return;
         }
         res.json({
-            "message":"success",
+            "message":"වැඩේ හරි!",
             "data":row
         })
       });
@@ -71,7 +71,7 @@ app.post("/api/user/", (req, res, next) => {
             return;
         }
         res.json({
-            "message": "success",
+            "message": "වැඩේ හරි!",
             "data": data,
             "id" : this.lastID
         })
@@ -122,6 +122,6 @@ app.delete("/api/user/:id", (req, res, next) => {
 
 // Root path
 app.get("/", (req, res, next) => {
-    res.json({"message":"Ok"})
+    res.json({"message":"Hello Omobians! :D"})
 });
 
