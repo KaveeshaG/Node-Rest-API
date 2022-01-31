@@ -99,7 +99,7 @@ app.patch("/api/user/:id", (req, res, next) => {
                 return;
             }
             res.json({
-                message: "success",
+                message: "වැඩේ හරි!",
                 data: data
             })
     });
@@ -115,10 +115,14 @@ app.delete("/api/user/:id", (req, res, next) => {
                 res.status(400).json({"error": res.message})
                 return;
             }
-            res.json({"message":"deleted", rows: this.changes})
+            res.json({"message":"user ඉවරායි!", rows: this.changes})
     });
 })
 
+// End Message
+app.get("/api/", (req, res, next) => {
+    res.json({"message":"Thank you ආවට!❤️"})
+});
 
 // Root path
 app.get("/", (req, res, next) => {
