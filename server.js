@@ -126,6 +126,6 @@ app.get("/api/", (req, res, next) => {
 
 // Root path
 app.get("/", (req, res, next) => {
-    res.json({"message":"Hello Omobians! :D"})
+    res.json({"message":"Hello Guys! :D"})
 });
 
